@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello-world.component.css']
 })
 export class HelloWorldComponent {
-msg:string = "Hello World"
+  name:string = "Parv"
+  msg:string = "Hello World"
 }
