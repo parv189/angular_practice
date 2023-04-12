@@ -1,0 +1,15 @@
+
+<div class="container">
+    <div class="row1">
+        <label for="uaername">Username: </label>
+        <input [style] = "borderStyle" type="text" (keyup) = "getname($event)">
+    </div>
+    <div class="row2">
+        <label for="password">Password: </label>
+        <input [style] = "borderStyle" type="password" (keyup) = "getpass($event)">
+    </div>
+    <div class="row3">
+        <button type="submit" (click)="validate()">Submit</button>
+    </div>
+</div>
+
