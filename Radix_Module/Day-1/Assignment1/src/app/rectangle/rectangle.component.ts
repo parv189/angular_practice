@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./rectangle.component.css']
 })
 export class RectangleComponent {
-height:number = 5;
-width:number = 10;
-area:number = this.height*this.width
+height!:number;
+width!:number;
+area!:number;
+calArea(event:any){
+  this.area = this.height*this.width
+}
+
 }

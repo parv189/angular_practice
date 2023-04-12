@@ -1,0 +1,23 @@
+.container{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: rgb(68, 68, 124);
+    
+}
+
+.row1,.row2,.row3{
+    padding: 10px;
+}
+button{
+    padding: 5px;
+    width: 20%;
+    color: aliceblue;
+    background-color: rgb(49, 67, 114);
+    border-color: transparent;
+    border-radius: 5px;
+}

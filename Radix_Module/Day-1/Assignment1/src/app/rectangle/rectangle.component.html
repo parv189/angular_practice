@@ -1,1 +1,15 @@
-<p>Area of Rectangle is: {{area}}</p>
+<div class="container">
+    <div class="row1">
+        Enter Height: <input type="number" [(ngModel)] ="height">
+        </div>
+        <div class="row2">
+        Enter Width: <input type="number" [(ngModel)] ="width">
+        </div>
+        <div class="row3">
+            <button type="button" (click) = calArea($event)>Calculate</button>
+        </div>
+        <div class="row4">
+            <p>Area of Rectangle is: {{area}}</p>
+        </div>
+</div>
+
