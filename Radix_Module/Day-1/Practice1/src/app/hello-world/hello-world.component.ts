@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HelloWorldComponent {
   name:string = "Parv"
-  msg:string = "Hello World"
+
 }
