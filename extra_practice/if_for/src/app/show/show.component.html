@@ -1,0 +1,32 @@
+<p>show works!</p>
+<!-- nfFor to iterate array-->
+<table class="table">
+    <!-- <tr *ngFor = "let head of object;let i = index">
+        <td *ngIf="i==0" class="td1">{{head}}</td>
+        
+    </tr> -->
+    <tr *ngFor = "let k of array[1]|keyvalue">
+        <td>{{k.key}}</td>
+    </tr>
+    <tr *ngFor = "let arr of array">
+        <td class="td1">{{arr.name}}</td>
+        <td class="td2">{{arr.id}}</td>
+        <td class="td3">{{arr.status}}</td>
+        <td class="td4">{{arr.address.block}}</td>
+        <td class="td5">{{arr.address.city}}</td>
+        <td class="td6">{{arr.address.state}}</td>
+    </tr>
+</table>
+{{object|json}}
+<th>{{array[0].address}}</th>
+<!-- <span>
+      <p>Object</p>
+      <div *ngFor="let item of object | keyvalue">
+        {{item.value}}
+      </div>
+      <p>Map</p>
+      <div *ngFor="let item of map | keyvalue">
+        {{item.key}}:{{item.value}}
+      </div>
+    </span> -->
+

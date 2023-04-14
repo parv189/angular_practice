@@ -2,17 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { SqrtPipe } from './sqrt';
+import { UperPipe } from './Uper';
 @NgModule({
   declarations: [
-    AppComponent,
-    FormComponent
+    AppComponent,SqrtPipe,UperPipe
   ],
   imports: [
-    BrowserModule,
-    NgbModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

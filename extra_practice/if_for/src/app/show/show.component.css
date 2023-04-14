@@ -1,0 +1,8 @@
+.table,td,tr{
+border:1px solid black;
+
+text-align: center;
+}
+.td1,.td2,.td3,.td4,.td5,.td6{
+    width: 1%;
+}
