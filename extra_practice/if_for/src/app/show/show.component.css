@@ -1,8 +1,33 @@
-.table,td,tr{
+.td1,.tr1{
 border:1px solid black;
-
 text-align: center;
 }
-.td1,.td2,.td3,.td4,.td5,.td6{
-    width: 1%;
+
+.table{
+    width: 40%;
 }
+
+.tr2{
+    display: table-cell;
+    text-align: center;
+    width: 20%;
+    margin: 0px;
+}
+.tb2{
+    display: flex;
+    border-collapse: collapse;
+    
+}
+.td2{
+    border-collapse: collapse; 
+    display: block;
+    border: 1px solid black;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+
+}
+
+
+
+
