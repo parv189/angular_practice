@@ -5,11 +5,9 @@
         <td *ngIf="i==0" class="td1">{{head}}</td>
         
     </tr> -->
-    <tr class="tr1">
-        <td>Name</td>
-        <td>ID</td>
-        <td>Status</td>
-        <td colspan="5">Address</td>
+    <tr class="tr1 cell" *ngFor = "let a of array[0]|keyvalue">
+        <td>{{a.key}}</td>
+
     </tr>
     <tr class="tr1">
       <td colspan="3"></td>

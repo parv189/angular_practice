@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ShowComponent } from './show/show.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { IfelseComponent } from './ifelse/ifelse.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowComponent
+    ShowComponent,
+    IfelseComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

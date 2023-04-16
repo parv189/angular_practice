@@ -2,6 +2,9 @@
 border:1px solid black;
 text-align: center;
 }
+.cell{
+    display: table-cell;
+}
 
 .table{
     width: 40%;
