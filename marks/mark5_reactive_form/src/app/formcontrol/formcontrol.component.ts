@@ -11,7 +11,7 @@ export class FormcontrolComponent {
     Password=new FormControl('')
 
   onClick(){
-    console.warn(this.user.value,this.Password.value);
+    console.warn(this.user.value);
     
   }
 }

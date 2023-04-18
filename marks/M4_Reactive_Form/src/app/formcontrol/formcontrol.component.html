@@ -1,0 +1,17 @@
+<p>formcontrol works!</p>
+
+        <input type="text" placeholder="Name" [formControl]="name"><br><br>
+        <input type="email" placeholder="Email" [formControl]="email"><br><br>
+        <input type="password" placeholder="Password" [formControl]="password"><br><br>
+        <input type="text" placeholder="Address" [formControl]="address"><br><br>
+        <!-- <input type="radio" name="rad">Radio1
+        <input type="radio" name="rad">Radio2<br><br>
+        <input type="checkbox" value="1" name="ch"> Checkbox1<br><br>
+        <input type="checkbox" value="2" name="ch"> Checkbox2<br><br>
+        <input type="checkbox" value="3" name="ch"> Checkbox3<br><br>
+        <input type="checkbox" value="4" name="ch"> Checkbox4<br><br>-->
+        <button type="submit" (click)="onClick()">Submit</button>
+        <button type="submit" (click)="clear()">Clear</button>
+    
+
+<p>{{name.value}}</p>
