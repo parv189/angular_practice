@@ -1,0 +1,41 @@
+<p>formgroup works!</p>
+<form [formGroup]="loginform" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="name"><br><br>
+    <input type="email" formControlName="email"><br><br>
+    <div formGroupName="address">
+        <input type="text" formControlName="flat"><br><br>
+        <input type="text" formControlName="building"><br><br>
+        <select formControlName="city">
+            <option [value]="item" *ngFor="let item of cities">{{item}}</option>
+        </select>
+    </div>
+    <input type="radio" value="Radio1" formControlName="gender">Radio1
+    <input type="radio" value="Radio2" formControlName="gender">Radio2 <br><br>
+    <button type="submit">Submit</button>
+    <button type="button" (click)="clear()">Clear</button>
+    <button type="button" (click)="AutoFill()">Auto Fill</button>
+</form>
+
+<table class="table text-center" style="width: 50%">
+    <thead>
+        <tr>
+            <td class="border border-dark">Name</td>
+            <td class="border border-dark">Email</td>
+            <td class="border border-dark">Flat</td>
+            <td class="border border-dark">Building</td>
+            <td class="border border-dark">City</td>
+            <td class="border border-dark">Gender</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data">
+            <td class="border border-dark">{{item.name}}</td>
+            <td class="border border-dark ">{{item.email}}</td>
+            <td class="border border-dark">{{item.address.flat}}</td>
+            <td class="border border-dark">{{item.address.building}}</td>
+            <td class="border border-dark">{{item.address.city}}</td>
+            <td class="border border-dark">{{item.gender}}</td>
+        </tr>
+    </tbody>
+
+</table>
