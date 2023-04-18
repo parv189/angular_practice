@@ -1,3 +1,4 @@
+<p>basic-validation works!</p>
 <p>formgroup works!</p>
 <form [formGroup]="loginform" (ngSubmit)="onSubmit()">
     <input type="text" formControlName="name"><br><br>
@@ -15,8 +16,8 @@
     <button type="button" (click)="clear()">Clear</button>
     <button type="button" (click)="AutoFill()">Auto Fill</button>
 </form>
-<p>{{loginform.status}}</p>
-<table class="table text-center" style="width: 50%">
+<p>Status: {{loginform.status}}</p>
+<table class="table text-center table-striped" style="width: 50%">
     <thead>
         <tr>
             <td class="border border-dark">Name</td>
@@ -27,7 +28,7 @@
             <td class="border border-dark">Gender</td>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="table-primary">
         <tr *ngFor="let item of data">
             <td class="border border-dark">{{item.name}}</td>
             <td class="border border-dark ">{{item.email}}</td>
