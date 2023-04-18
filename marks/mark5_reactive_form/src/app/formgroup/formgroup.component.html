@@ -1,0 +1,9 @@
+<p>formgroup works!</p>
+<form [formGroup]="loginform" (ngSubmit)="onClick()">
+    <input type="text" formControlName="User">
+    <br><br>
+    <input type="email" formControlName="Email">
+    <br><br>
+    <button type="submit">submit</button>
+</form>
+<p>Name:{{loginform.value}}</p>

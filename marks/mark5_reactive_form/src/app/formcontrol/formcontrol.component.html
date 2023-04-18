@@ -1,0 +1,9 @@
+<h2>Reactive Form</h2>
+<form (ngSubmit)="onClick()">
+  <input type="text" placeholder="Name" [formControl]="user">
+  <br><br>
+  <input type="password" placeholder="Password" [formControl]="Password">
+  <br><br>
+  <button type="submit">Submit</button>
+</form>
+<p>{{user.value}}</p>
