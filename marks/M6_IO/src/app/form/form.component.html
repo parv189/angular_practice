@@ -1,0 +1,47 @@
+<div class="container p-5">
+    <div class="row mt-3">
+        <div class="col col-md-2">
+            <label for="name">Name:</label>
+        </div>
+        <div class="col col-md-2">
+            <input type="text" [(ngModel)]="username">
+        </div>
+        <div class="col col-md-2">
+            <h5>
+                {{'Total Likes:'+count+''}}
+            </h5>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col col-md-1">
+            <input type="radio" name="gender" value="Male" [(ngModel)]="usergender">
+        </div>
+        <div class="col col-md-4">
+            <label for="gender">Male</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-1">
+            <input type="radio" name="gender" value="Female" [(ngModel)]="usergender">
+        </div>
+        <div class="col col-md-4">
+            <label for="gender">Female</label>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col col-md-2">
+            <select [(ngModel)]="usercity">
+                <option value="A" selected>---SELECT CITY---</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Junagadh">Junagadh</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+
+
+<app-show [name]="username" [gender]="usergender" [city]="usercity" (onclickofbutton)="counts($event)"></app-show>
