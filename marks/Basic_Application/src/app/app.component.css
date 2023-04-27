@@ -1,0 +1,31 @@
+li a{
+    text-decoration: none;
+    padding: 4px 16px ;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    align-items: center;
+}
+.container1{
+    height: 100px;
+    background-color: rgb(95, 147, 243);
+    display: flex;
+    justify-content:center;
+
+}
+ul{
+    height: 100px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+li a:hover{
+    color:rgb(241, 240, 240);
+    background-color: rgb(40, 13, 192);
+}
+.active{
+    color:rgb(0, 0, 0);
+    background-color: rgb(39, 44, 68);
+}
+
+

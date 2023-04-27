@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row gy-5 mt-5">
+        <ng-container *ngFor="let item of data">
+            <div class="col col-md-3">
+                <div class="card" style="width: 300px;height: 500px;">
+                    <img style="height: 300px;" src={{item.img}} alt="img">
+                    <P>{{'ID: '+item.id}}</P>
+                    <div class="card-body">
+                        <h4 class="card-title">{{item.title}}</h4>
+                        <p class="card-text">{{item.details}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
