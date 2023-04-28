@@ -1,0 +1,18 @@
+<p>cards works!</p>
+<div class="container">
+    <div class="row gy-5">
+        <ng-container *ngFor="let car of cars1">
+            <div class="col col-md-3">
+                <div class="card" style="width: 300px;">
+                    <img style="height: 300px;" src={{car.img}} alt="img">
+                    <P>{{'ID: '+car.id}}</P>
+                    <div class="card-body">
+                        <h4 class="card-title">{{car.title}}</h4>
+                        <p class="card-text">{{car.other}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <a [routerLink]="['/cards',1]">go to 1st card</a>
+</div>

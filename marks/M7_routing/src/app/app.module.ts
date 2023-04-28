@@ -10,15 +10,17 @@ import { ContactComponent } from './contact/contact.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ErrerComponent } from './errer/errer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CardsComponent } from './cards/cards.component';
 
 const appRoute : Routes=[
   {path:'',component:HomeComponent},
   //{path:'',redirectTo: 'home',pathMatch:'full'},
   {path:'home',component: HomeComponent},
   {path:'category',component:  CategoryComponent},
-  {path:'category/:id',component:  CategoryComponent},
   {path:'about',component: AboutComponent},
   {path:'contact',component: ContactComponent},
+  {path:'cards/:id',component: CardsComponent},
+  {path:'cards',component: CardsComponent},
   {path:'**',component:ErrerComponent}
 ]
 
@@ -29,7 +31,8 @@ const appRoute : Routes=[
     CategoryComponent,
     AboutComponent,
     ContactComponent,
-    ErrerComponent
+    ErrerComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,7 @@ import { Router,ActivatedRoute } from '@angular/router';
 export class HomeComponent {
   constructor(private route:Router,private activatedrout:ActivatedRoute){}
 gotocategory(){
-this.route.navigate(['category'],{relativeTo:this.activatedrout})
-//this.route.navigateByUrl('category')
+//this.route.navigate(['category'],{relativeTo:this.activatedrout})
+this.route.navigateByUrl('category')
 }
 }
