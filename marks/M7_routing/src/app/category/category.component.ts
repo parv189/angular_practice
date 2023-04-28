@@ -1,5 +1,5 @@
 import { Component,OnInit} from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,Router } from '@angular/router';
 import { categories } from '../services/categories.service';
 import { car } from '../model';
 @Component({
@@ -10,7 +10,7 @@ import { car } from '../model';
 })
 export class CategoryComponent implements OnInit{
   //id:(string|null|number)=1;
-  constructor(private cate: categories,private activatedroute:ActivatedRoute) { }
+  constructor(private cate: categories,private activatedroute:ActivatedRoute,private router:Router) { }
   cars:car[]=[];
 
 
@@ -28,5 +28,8 @@ export class CategoryComponent implements OnInit{
   //   }
   //     console.log(this.cars);
       
+   }
+   more(x:number){
+    this.router.navigate(['/cards',x+1])
    }
 }

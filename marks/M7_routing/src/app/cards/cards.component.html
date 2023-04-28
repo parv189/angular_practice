@@ -3,16 +3,21 @@
     <div class="row gy-5">
         <ng-container *ngFor="let car of cars1">
             <div class="col col-md-3">
-                <div class="card" style="width: 300px;">
+                <div class="card" style="width: 300px;height: 460px;">
                     <img style="height: 300px;" src={{car.img}} alt="img">
                     <P>{{'ID: '+car.id}}</P>
                     <div class="card-body">
-                        <h4 class="card-title">{{car.title}}</h4>
+                        <h4 *ngIf="!editmode" class="card-title">{{title1}}</h4>
+                        <div *ngIf="editmode" style="text-align: center;">
+                            <input type="text" [(ngModel)]="title1">
+                        </div>
                         <p class="card-text">{{car.other}}</p>
+                        <button class="btn btn-warning me-3" (click)="onedittitle()">Edit</button>
+                        <button class="btn btn-success" (click)="onupdatetitle()" [routerLink]="['/cards',id]">Updated</button>
                     </div>
                 </div>
             </div>
         </ng-container>
     </div>
-    <a [routerLink]="['/cards',1]">go to 1st card</a>
+    <a [routerLink]="['/category']">Back</a>
 </div>

@@ -11,6 +11,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ErrerComponent } from './errer/errer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CardsComponent } from './cards/cards.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoute : Routes=[
   {path:'',component:HomeComponent},
@@ -38,7 +39,8 @@ const appRoute : Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoute),
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

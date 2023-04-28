@@ -1,15 +1,16 @@
 <p>category works!</p>
 <div class="container">
     <div class="row gy-5">
-        <ng-container *ngFor="let car of cars">
+        <ng-container *ngFor="let car of cars; let i = index">
             <div class="col col-md-3">
-                <div class="card" style="width: 300px;">
+                <div class="card" style="width: 300px;height: 530px;">
                     <img style="height: 300px;" src={{car.img}} alt="img">
                     <P>{{'ID: '+car.id}}</P>
                     <div class="card-body">
                         <h4 class="card-title">{{car.title}}</h4>
                         <p class="card-text">{{car.other}}</p>
                     </div>
+                    <button class="btn btn-primary m-3" style="width: 30%;" value="i" (click)="more(i)">More</button>
                 </div>
             </div>
         </ng-container>
