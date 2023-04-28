@@ -1,11 +1,21 @@
-<div class="container1">
-  <ul>
-    <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">Home</a></li>
-    <li routerLinkActive="active"><a routerLink="category">Category</a></li>
-    <li routerLinkActive="active"><a routerLink="about">About</a></li>
-    <li routerLinkActive="active"><a routerLink="contact">Contact</a></li>
-  </ul>
-</div>
 <div>
-  <router-outlet></router-outlet>
+  <div class="container1">
+    <ul>
+      <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">Home</a></li>
+      <li routerLinkActive="active"><a routerLink="category">Category</a></li>
+      <li routerLinkActive="active"><a routerLink="about">About</a></li>
+      <li routerLinkActive="active"><a routerLink="contact">Contact</a></li>
+      <!-- <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink=""  fragment="home">Home</a></li>
+      <li routerLinkActive="active"><a routerLink="" fragment="category">Category</a></li>
+      <li routerLinkActive="active"><a routerLink="" fragment="about">About</a></li>
+      <li routerLinkActive="active"><a routerLink="" fragment="contact">Contact</a></li> -->
+    </ul>
+  </div>
+  <div>
+    <!-- <app-home id="home"></app-home>
+    <app-category id="category"></app-category>
+    <app-about id="about"></app-about>
+    <app-contact id="contact"></app-contact> -->
+    <router-outlet></router-outlet>
+  </div>
 </div>

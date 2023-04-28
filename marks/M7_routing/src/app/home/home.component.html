@@ -1,3 +1,22 @@
-<p>home works!</p>
-<a [routerLink]="'/about'">Go To about</a><br><br>
-<button class="btn btn-primary" (click)="gotocategory()">Go To Category</button>
+<div class="container">
+    <div class="row">
+        <div class="col col-md-5">
+            <div class="text-center">
+                <h1>Login</h1>
+                <h6>Please Enter Name and Password</h6>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputName1" class="form-label" >Name</label>
+                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"[(ngModel)]="name" name="name" ngDefaultControl>
+                    <div id="nameHelp" class="form-text">We'll never share your name with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label" >Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"[(ngModel)]="Pass" name="Pass"ngDefaultControl>
+                </div>
+                <button type="button" class="btn btn-primary" (click)="onlogin()">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

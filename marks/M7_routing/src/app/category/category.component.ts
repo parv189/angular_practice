@@ -30,6 +30,6 @@ export class CategoryComponent implements OnInit{
       
    }
    more(x:number){
-    this.router.navigate(['/cards',x+1])
+    this.router.navigate(['/category/cards',x+1])
    }
 }
