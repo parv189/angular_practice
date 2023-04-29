@@ -1,0 +1,8 @@
+<p>product works!</p>
+
+<ul>
+    <li *ngFor="let product of products">
+      <a routerLink="product/{{product.id}}">{{ product.title }}</a>
+      <button (click)="deleteProduct(product.id)">Delete</button>
+    </li>
+</ul>

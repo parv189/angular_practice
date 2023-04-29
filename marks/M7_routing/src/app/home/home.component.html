@@ -8,12 +8,14 @@
             <form>
                 <div class="mb-3">
                     <label for="exampleInputName1" class="form-label" >Name</label>
-                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"[(ngModel)]="name" name="name" ngDefaultControl>
+                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"
+                    [(ngModel)]="name" name="name" ngDefaultControl placeholder="name">
                     <div id="nameHelp" class="form-text">We'll never share your name with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label" >Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"[(ngModel)]="Pass" name="Pass"ngDefaultControl>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                    [(ngModel)]="Pass" name="Pass"ngDefaultControl placeholder="Password">
                 </div>
                 <button type="button" class="btn btn-primary" (click)="onlogin()">Login</button>
             </form>

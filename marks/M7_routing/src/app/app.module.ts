@@ -12,7 +12,7 @@ import { CardsComponent } from './cards/cards.component';
 import { FormsModule } from '@angular/forms';
 import { approuting } from './approuting.module';
 import { AuthGuard } from './auth.guard';
-
+import { AuthService } from './auth.service';
 
 
 
