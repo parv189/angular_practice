@@ -1,0 +1,12 @@
+<form [formGroup]="Myform">
+  <input type="text" formControlName="ID">ID <br>
+   <input type="text" formControlName="NAME">NAME <br>
+   <div formArrayName="Address" >
+    <div *ngFor="let x of Myform.controls.Address['controls'];let i = index">
+      <input type="number" formControlName="Flat">
+      <input type="text" formControlName="Building">
+      <input type="text" formControlName="City">
+    </div>
+   </div>
+   <div><button (click)="onClick()">Add Address</button></div>
+</form>
