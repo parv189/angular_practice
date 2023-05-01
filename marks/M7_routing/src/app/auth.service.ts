@@ -12,6 +12,7 @@ data = [
   {name:"Raj",pass:1234},
   {name:"Karnav",pass:1234},
   {name:"Heet",pass:1234},
+  {name:"User",pass:1234}
 ]
   constructor() { }
 
