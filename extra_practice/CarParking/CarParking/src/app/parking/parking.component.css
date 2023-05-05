@@ -1,11 +1,11 @@
 td{
-  border: 1px solid black;
-  width:100px;
-  height:30px
+  border: 2px solid black;
+  width:200px;
+  height:60px
 }
 table{
   border-collapse: collapse;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .c2{
   display:none;
@@ -19,7 +19,7 @@ table{
 .ib
 {
   display: inline;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .InTime
 {
