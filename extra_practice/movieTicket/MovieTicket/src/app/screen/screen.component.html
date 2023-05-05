@@ -1,0 +1,35 @@
+<!-- <p>screen works!</p>
+
+
+
+<table>
+  <tbody *ngFor= "let item of data.Rows">
+    <tr *ngFor="let x of item|keyvalue">
+      <td *ngFor="let y of x|keyvalue">{{y.value}}</td>
+    </tr>
+  </tbody>
+</table><br> -->
+<table>
+  <tbody >
+      <tr *ngFor="let item of rows;let i = index">
+          <ng-container *ngFor="let x of ref">
+              <td *ngIf="x <= rows[i].End && x >= rows[i].Start" class="td"
+                [class]="(item.AlreadyBooked.includes(x)||booked.includes(x))?'c1':selected.includes(x)?'c2':'c3'"
+                (click)="onclick(x) ">
+              {{x}}
+            </td>
+            </ng-container>
+      </tr>
+  </tbody>
+</table>
+
+<div class="container-fluide"><button class="btn btn-primary" (click)="onBook()">Book Now</button></div>
+
+<div class="container-fluide">
+  <div><h5 class="ib">MovieName: </h5><p class="ib">{{data.MovieName}}</p></div>
+  <div><h5 class="ib">NoofBookedSeat: </h5><p class="ib">{{booked.length}}</p></div>
+  <div><h5 class="ib">Total Amoun: </h5><p class="ib">{{data.BasicPrice*(booked.length)}}</p></div>
+  <div><h5 class="ib">Tax: </h5><p class="ib">{{((data.BasicPrice*(booked.length))*20)/100}}</p></div>
+  <div><h5 class="ib">Total Payable Amount: </h5><p class="ib">{{((data.BasicPrice*(booked.length))*20)/100+data.BasicPrice*(booked.length)}}</p></div>
+</div>
+

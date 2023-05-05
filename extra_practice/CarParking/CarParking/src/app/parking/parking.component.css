@@ -1,0 +1,27 @@
+td{
+  border: 1px solid black;
+  width:100px;
+  height:30px
+}
+table{
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+.c2{
+  display:none;
+}
+.c1{
+  display: block;
+}
+.colur1{
+  background-color: rgb(19, 121, 36);
+}
+.ib
+{
+  display: inline;
+  margin-left: 5px;
+}
+.InTime
+{
+  border: red;
+}
