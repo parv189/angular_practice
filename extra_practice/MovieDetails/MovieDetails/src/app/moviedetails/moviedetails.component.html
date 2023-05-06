@@ -1,0 +1,48 @@
+
+<div class="container-fluid p-0">
+  <div class=" border bg-secondary text-white text-center d-flex justify-content-around align-items-center " style="height: 100%;width: 100%;">
+    <div class="d-flex justify-content-between">
+      <select class="form-control text-center me-2 my-3" style="height: 26px;width: 130px; padding: 0;font-size:x-small;" [(ngModel)]="select1" (change)="onFilter1()">
+        <option value="select">select by Movie Name</option>
+        <option *ngFor="let item of filter[0].Movies"  [value]="item.MovieName">{{item.MovieName}}</option>
+      </select>
+      <select class="form-control text-center me-2 my-3" style="height: 26px;width: 130px; padding: 0;font-size:x-small" [(ngModel)]="select2" (change)="onFilter2()">
+        <option value="select">select by Actors Name</option>
+        <option *ngFor="let item of filter[0].Actors"  [value]="item">{{item}}</option>
+      </select>
+      <select class="form-control text-center my-3" style="height: 26px;width: 130px; padding: 0;font-size:x-small" [(ngModel)]="select3" (change)="onFilter3()">
+        <option value="select">select by Directors Name</option>
+        <option *ngFor="let item of filter[0].Directors"  [value]="item">{{item}}</option>
+      </select>
+    </div>
+    <div>
+      <img style="width: 100px;height: 30px;" src="assets/images/ixaa8tyj24yv45cmgysl.png" alt="Image">
+    </div>
+    </div>
+</div>
+
+
+<div class="container-fluid p-0" >
+  <div class="border c2  text-center" style="height: 100%;width: 100%;">
+    <h5>{{play[0].Details.DirectorName}}</h5>
+  </div>
+  <div class="d-flex">
+    <div class="c2">
+      <ul class="list-unstyled text-center" >
+        <li *ngFor="let name of Mydata;let i= index" class="border p-1 " style="width: 100%;" [class]="colored.includes(name.MovieName)?'c1':'c2'"
+        (click)="onSelect(i)">{{name.MovieName}}</li>
+      </ul>
+    </div>
+    <div class="c2 text-center" style="width:100%;height: 100%;">
+      <video class=" w-100 h-100" [src]="play[0].Details.VideoLink"autoplay
+        controls></video>
+    </div>
+    <div class="border c2  p-2" style="width: 20%;">
+      <h5>Actors Name</h5>
+      <ul class="list-unstyled text-start" *ngFor="let name of play[0].Details.ActorsNames;let i =index">
+        <li>{{i+1 + '. '+ name}}</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
