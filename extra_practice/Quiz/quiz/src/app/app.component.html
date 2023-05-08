@@ -1,0 +1,11 @@
+<div class="container-fluid bg-secondary d-flex justify-content-end align-items-center" style="height: 70px;">
+<h4 class="me-5 text-white">{{message}}</h4>
+
+</div>
+<div class="row mt-5" [class]="status?'c1':'c2'">
+  <div class="col col-md-6 offset-3 text-center">
+      <h4 class="text-primary">Click here to start Your Exam</h4>
+      <button class="btn btn-success mt-4" type="button"(click)='Question1()'>Start</button>
+  </div>
+</div>
+<router-outlet></router-outlet>

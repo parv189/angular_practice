@@ -1,0 +1,16 @@
+<p>question2 works!</p>
+<div class="row mt-5">
+    <div class="col col-md-6 offset-3 text-center ">
+  <h4>({{Mydata[1].QuestionID}}) <span>{{Mydata[1].Description}}</span> </h4>
+  <input class="ms-4 mt-2" type="radio" value="1" name="radio" (click)="onSelect(Mydata[1].Options[0])">{{Mydata[1].Options[0]}}
+  <input class="ms-3 mt-2" type="radio" value="2" name="radio" (click)="onSelect(Mydata[1].Options[1])">{{Mydata[1].Options[1]}}
+  <input class="ms-3 mt-2" type="radio" value="3" name="radio" (click)="onSelect(Mydata[1].Options[2])">{{Mydata[1].Options[2]}}
+  <input class="ms-3 mt-2" type="radio" value="4" name="radio" (click)="onSelect(Mydata[1].Options[3])">{{Mydata[1].Options[3]}}
+  <div class="d-flex justify-content-end mt-3">
+    <div>
+      <button class="btn btn-secondary me-5" type="button" (click)="onNext()">Next</button>
+    </div>
+  </div>
+
+    </div>
+  </div>
