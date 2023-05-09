@@ -1,0 +1,31 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <th>
+
+      </th>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let a of dummy">
+        <tr *ngFor="let x of Mydata|paginate:{
+          itemsPerPage:tableSize,
+          currentPage:page,
+          totalItems:count}; let i =index">
+          <td>{{x.score}}</td>
+          <td>{{x.show.id}}</td>
+          <td>{{x.show.name}}</td>
+          <td>{{x.show.type}}</td>
+          <td>{{x.show.language}}</td>
+          <td>{{x.show.schedule.days}}</td>
+          <td>{{x.show.schedule.time}}</td>
+          <td></td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <div>
+    <pagination-controls previousLable="Prev" nextLabel="next" (pageChange)="onTableDataChange($event)">
+
+    </pagination-controls>
+  </div>
+</div>

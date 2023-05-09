@@ -116,7 +116,7 @@ export class ParkingComponent {
   onClickOfOut() {
     this.table.map((item) => {
       if (item.CellNo === this.tempNo) {
-        item.CarNumber = ' ';
+        item.CarNumber = '';
         item.InTime = '';
       }
     });
